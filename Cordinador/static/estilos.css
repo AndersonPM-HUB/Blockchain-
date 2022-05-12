@@ -1,0 +1,23 @@
+img{
+
+    display: block;
+    margin:auto;
+}
+body{
+    background-color: khaki;
+    font-family: "Segoe UI";
+    text-align: center;
+}
+.form-control{
+    width: 200px;
+    display: block;
+    margin:auto;
+
+}
+.navbar-light .navbar-brand{
+
+    color: white;
+}
+.nav-item{
+    background-color: white;
+}

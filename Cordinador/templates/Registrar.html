@@ -1,0 +1,23 @@
+{% extends 'Base_template.html' %}
+
+{% block content %}
+<h1>REGISTRAR TRANSACCION</h1>
+
+<form action="{{ url_for('registrar_transaccion')}}" method="POST">
+  <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">Digita tu wallet</label>
+    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"  name="user">
+  </div>
+  <div class="mb-3">
+    <label for="exampleInputPassword1" class="form-label">Digita la wallet destino </label>
+    <input type="text" class="form-control" id="exampleInputPassword1"   name="user_des">
+  </div>
+  <div class="mb-3 form-check">
+     <label for="exampleInputPassword2" class="form-label">Digita la cantidad a enviar</label>
+    <input type="text" class="form-control" id="exampleInputPassword2"   name="monto">
+  </div>
+  <button type="submit" class="btn btn-primary">Enviar</button>
+</form>
+<p>{{data}}</p>
+
+{% endblock %}

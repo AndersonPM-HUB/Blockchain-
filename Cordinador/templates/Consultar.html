@@ -1,0 +1,13 @@
+{% extends 'Base_template.html' %}
+
+{% block content %}
+<h1>CONSULTAR FONDOS</h1>
+<form action="{{url_for('consultar_fondo')}}" method="POST">
+
+    <label for="name">Digita wallet:</label> <input type="text" id="name" name="user_name">
+
+    <input class="btn btn-primary" type="submit" value="Enviar">
+
+    <h1>{{data}}</h1>
+</form>
+{% endblock %}
